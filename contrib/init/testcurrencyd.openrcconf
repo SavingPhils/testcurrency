@@ -1,0 +1,26 @@
+# /etc/conf.d/testcurrencyd: config file for /etc/init.d/testcurrencyd
+
+# Config file location
+#BITCOIND_CONFIGFILE="/etc/testcurrency/testcurrency.conf"
+
+# What directory to write pidfile to?  (created and owned by $BITCOIND_USER)
+#BITCOIND_PIDDIR="/var/run/testcurrencyd"
+
+# What filename to give the pidfile
+#BITCOIND_PIDFILE="${BITCOIND_PIDDIR}/testcurrencyd.pid"
+
+# Where to write testcurrencyd data (be mindful that the blockchain is large)
+#BITCOIND_DATADIR="/var/lib/testcurrencyd"
+
+# User and group to own testcurrencyd process
+#BITCOIND_USER="testcurrency"
+#BITCOIND_GROUP="testcurrency"
+
+# Path to testcurrencyd executable
+#BITCOIND_BIN="/usr/bin/testcurrencyd"
+
+# Nice value to run testcurrencyd under
+#BITCOIND_NICE=0
+
+# Additional options (avoid -conf and -datadir, use flags above)
+BITCOIND_OPTS=""

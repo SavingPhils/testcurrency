@@ -1,0 +1,26 @@
+[Unit]
+Description=Testcurrency's distributed currency daemon
+After=network.target
+
+[Service]
+User=testcurrency
+Group=testcurrency
+
+Type=forking
+PIDFile=/var/lib/testcurrencyd/testcurrencyd.pid
+
+ExecStart=/usr/bin/testcurrencyd -daemon -pid=/var/lib/testcurrencyd/testcurrencyd.pid \
+          -conf=/etc/testcurrency/testcurrency.conf -datadir=/var/lib/testcurrencyd
+
+ExecStop=-/usr/bin/testcurrency-cli -conf=/etc/testcurrency/testcurrency.conf \
+         -datadir=/var/lib/testcurrencyd stop
+
+Restart=always
+PrivateTmp=true
+TimeoutStopSec=60s
+TimeoutStartSec=2s
+StartLimitInterval=120s
+StartLimitBurst=5
+
+[Install]
+WantedBy=multi-user.target

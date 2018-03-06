@@ -1,0 +1,12 @@
+[Desktop Entry]
+Encoding=UTF-8
+Name=Testcurrency
+Comment=Testcurrency P2P Cryptocurrency
+Comment[fr]=Testcurrency, monnaie virtuelle cryptographique pair à pair
+Comment[tr]=Testcurrency, eşten eşe kriptografik sanal para birimi
+Exec=testcurrency-qt %u
+Terminal=false
+Type=Application
+Icon=testcurrency128
+MimeType=x-scheme-handler/testcurrency;
+Categories=Office;Finance;
