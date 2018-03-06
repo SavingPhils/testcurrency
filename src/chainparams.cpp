@@ -115,12 +115,12 @@ public:
         nMinerThreads = 0;
         nTargetTimespan = 1 * 60; // Testcurrency: 1 day
         nTargetSpacing = 1 * 60;  // Testcurrency: 1 minute
-        nMaturity = 100;
+        nMaturity = 50;
         nMasternodeCountDrift = 20;
         nMaxMoneyOut = 1200000000 * COIN;
 
         /** Height or Time Based Activations **/
-        nLastPOWBlock = 300;
+        nLastPOWBlock = 200;
         nModifierUpdateBlock = 1;
         nZerocoinStartHeight = 2000;
         nZerocoinStartTime = 1520543843;
